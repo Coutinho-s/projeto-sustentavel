@@ -1,0 +1,212 @@
+/* Cores conforme pedido */
+:root {
+  --verde-claro: #A8D5BA;
+  --verde-escuro: #3B7A57;
+  --bege-creme: #F5F3E7;
+  --marrom-claro: #C9A66B;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--verde-escuro);
+  background-color: var(--bege-creme);
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--verde-claro);
+  color: var(--verde-escuro);
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/* Navegação */
+nav {
+  background-color: var(--verde-escuro);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75em;
+}
+
+nav a {
+  color: var(--bege-creme);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 0.75em;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--marrom-claro);
+  color: var(--verde-escuro);
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+section h2 {
+  color: var(--verde-escuro);
+  border-bottom: 3px solid var(--marrom-claro);
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+p, li {
+  margin-bottom: 1em;
+}
+
+ul {
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+
+a {
+  color: var(--verde-escuro);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Vídeos */
+iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  margin-bottom: 0.5em;
+  border-radius: 6px;
+}
+
+/* Formulário */
+form {
+  background-color: var(--verde-claro);
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: var(--verde-escuro);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid var(--marrom-claro);
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  color: var(--verde-escuro);
+  background-color: var(--bege-creme);
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid var(--marrom-claro);
+}
+
+form button {
+  background-color: var(--verde-escuro);
+  color: var(--bege-creme);
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--marrom-claro);
+  color: var(--verde-escuro);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--marrom-claro);
+  color: var(--verde-escuro);
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+/* Listas de definição (FAQ e Glossário) */
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 1em;
+  color: var(--verde-escuro);
+}
+
+dd {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+  color: var(--verde-escuro);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: 1em;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  form {
+    padding: 1em;
+  }
+}
